@@ -30,6 +30,17 @@ Output:
 Hello, World!
 ```
 
+## Testing
+
+A test suite is included in `test.s` that verifies the string content and format.
+
+Build and run the test:
+```bash
+clang -c test.s -o test.o && clang test.o -o test && ./test
+```
+
+The test checks each character of "Hello, World!\n" individually and exits with code 0 on success.
+
 ## About
 
 This is a minimal x86-64 assembly program that demonstrates:

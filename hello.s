@@ -10,7 +10,7 @@ _main:
     mov $0x2000004, %rax        # write syscall number (0x2000004 on macOS)
     mov $1, %rdi                # file descriptor: stdout
     lea msg(%rip), %rsi         # pointer to message
-    mov $13, %rdx               # length of message
+    mov $14, %rdx               # length of message
     syscall
 
     # exit(0)
